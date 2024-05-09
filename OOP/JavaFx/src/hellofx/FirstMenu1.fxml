@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hellofx.GUI">
+   <left>
+      <AnchorPane prefHeight="750.0" prefWidth="828.0" style="-fx-background-color: maroon; -fx-background-image: url('file:C:/Users/mazen/Downloads/icon1');" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="237.0" fitWidth="230.0" layoutX="294.0" layoutY="4.0">
+               <image>
+                  <Image url="@icon1.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="242.0" layoutY="259.0" text="Welcome!" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Arial Black" size="60.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="90.0" layoutY="371.0" text="Hospital Mangement" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Arial Black" size="60.0" />
+               </font>
+            </Label>
+            <Label layoutX="291.0" layoutY="472.0" text="System" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="60.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="750.0" prefWidth="800.0" style="-fx-background-color: dimgray; -fx-border-color: Maroon; -fx-border-width: 10; -fx-border-style: dashed;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" layoutX="18.0" layoutY="105.0" prefHeight="489.0" prefWidth="423.0">
+               <children>
+                  <Label prefHeight="151.0" prefWidth="438.0" style="-fx-alignment: center;" text="Pick an option" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="40.0" />
+                     </font>
+                  </Label>
+                  <VBox alignment="CENTER" prefHeight="216.0" prefWidth="423.0" spacing="20.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#switchToSecondMenu" prefHeight="100.0" prefWidth="300.0" style="-fx-background-color: beige; -fx-border-color: maroon; -fx-border-radius: 40 40 40 40; -fx-border-width: 12; -fx-background-radius: 50 50 50 50;" text="Login" textFill="#0d0d0d">
+                           <font>
+                              <Font name="Arial" size="22.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#switchToThirdMenu" prefHeight="100.0" prefWidth="300.0" style="-fx-background-color: maroon; -fx-border-color: beige; -fx-border-radius: 50 50 50 50; -fx-background-radius: 60; -fx-border-width: 10;" text="Register" textFill="WHITE">
+                           <font>
+                              <Font name="Arial" size="22.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
